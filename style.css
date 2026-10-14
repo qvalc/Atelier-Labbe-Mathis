@@ -17,3 +17,12 @@ html{scroll-padding-top:105px}
 
 /* Logo amélioré : plus grand, contraste renforcé et contour cuivré */
 .brand img{width:104px;height:104px;object-fit:contain;border:0;border-radius:50%;filter:drop-shadow(0 0 7px rgba(220,123,55,.22));flex-shrink:0}.nav{min-height:116px}.brand{gap:17px}@media(max-width:760px){.brand img{width:78px;height:78px}.nav{min-height:unset}}
+
+/* Contact : coordonnées alignées sous le texte de présentation, à gauche */
+.contact-page .contact-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.contact-page .contact-layout>div:first-child .atelier-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 24px;padding:28px 0 0;margin:0;max-width:none;align-items:start}
+.contact-page .contact-layout>div:first-child .atelier-details p{margin:0;line-height:1.8;overflow-wrap:anywhere}
+.contact-page .contact-layout>div:first-child>p{max-width:550px}
+@media(max-width:900px){.contact-page .contact-layout{gap:32px}.contact-page .contact-layout>div:first-child .atelier-details{grid-template-columns:1fr;gap:16px}}
+@media(max-width:760px){.contact-page .contact-layout{grid-template-columns:1fr;gap:35px}.contact-page .contact-layout>div:first-child .atelier-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(max-width:430px){.contact-page .contact-layout>div:first-child .atelier-details{grid-template-columns:1fr}}
